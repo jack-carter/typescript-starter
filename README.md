@@ -55,3 +55,9 @@ Now create the source directories we specified in the `tsc` configuration above.
 mkdir src
 touch src/index.ts
 ```
+
+## Run the System
+For development we have created an `npm` command called `start:dev`, which you can run using the following.
+```
+npm run start:dev
+```
