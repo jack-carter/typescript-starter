@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/jack-carter/typescript-starter/issues"
   },
-  "homepage": "https://github.com/jack-carter/typescript-starter#readme"
+  "homepage": "https://github.com/jack-carter/typescript-starter#readme",
+  "devDependencies": {
+    "@types/node": "^13.13.0",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  }
 }
