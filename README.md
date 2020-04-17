@@ -16,17 +16,25 @@ mkdir typescript-starter
 mkdir typescript-starter/src
 cd typescript-starter
 touch README.md
-touch .gitignore
 touch tsconfig.json
 touch src/index.js
 npm init -y
+```
+
+## Configuring Git Properly
+```
 git init
+touch .gitignore
 git remote add origin https://github.com/jack-carter/typescript-starter.git
 git commit -m "Initial commit"
 git push -u origin master
 ```
 
-## npm Packages to Install 
+## npm Packages to Install
+```
+echo "node_modules/" >> .gitignore
+```
+
 ```
 npm install --save-dev typescript
 npm install --save-dev @types/node
