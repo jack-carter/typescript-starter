@@ -51,7 +51,7 @@ Create a `nodemon.json` file (like the one in this project).
 ## Add `npm` Commands
 We'l be adding two commands to our `package.json` file in the `scripts` section.
 ```
-"build": "rimraf ./build && tsc"
+"build": "rimraf ./build && tsc",
 "start:dev": "nodemon"
 ```
 
