@@ -76,3 +76,27 @@ Or in `production` mode.
 ```
 npm run start
 ```
+
+## Adding ESLint
+First install the `npm` packages we'll need.
+```
+npm install --save-dev eslint
+npm install --save-dev @typescript-eslint/parser
+npm install --save-dev @typescript-eslint/eslint-plugin
+```
+Now create the `.eslintrc` file as we have in this project.
+
+And tell ESLint the files you DON'T want it looking at.
+```
+echo "node_modules" >> .eslintignore
+echo "dist" >> .eslintignore
+```
+And finally add an `npm` command in the `scripts` block of `package.json`.
+```
+"line": "eslint . --ext .ts"
+```
+So that you can now easily run ESLint by using the following.
+```
+npm run lint
+```
+
