@@ -53,5 +53,5 @@ echo "build/" >> .gitignore
 Now create the source directories we specified in the `tsc` configuration above.
 ```
 mkdir src
-touch src/index.js
+touch src/index.ts
 ```
