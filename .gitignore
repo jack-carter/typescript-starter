@@ -1,2 +1,8 @@
+# Typescript
 node_modules/
 build/
+
+# MacOS
+.DS_Store
+Thumbs.db
+
