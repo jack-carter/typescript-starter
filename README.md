@@ -4,14 +4,13 @@ This guide follows along with the online tutorial found at [How to Setup a Types
 
 ## Before you begin you'll need ...
 
-### Node Version Manager (nvm)
-### Node Package Manager (npm)
-### A Git local install
-### A GitHub account 
-### A GitHub repository you want to upload to
+* Node Version Manager (nvm)
+* Node Package Manager (npm)
+* A Git local install
+* A GitHub account 
+* A GitHub repository you want to upload to
 
 ## Creating the Basic Project Shell
-
 ```
 mkdir typescript-starter
 mkdir typescript-starter/src
@@ -28,7 +27,6 @@ git push -u origin master
 ```
 
 ## npm Packages to Install 
-
 ```
 npm install --save-dev typescript
 npm install --save-dev @types/node
