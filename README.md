@@ -31,10 +31,12 @@ git push -u origin master
 ```
 
 ## npm Packages to Install
+First we need to ensure that any installed `npm` modules don't make their way into the Git repository.
 ```
 echo "node_modules/" >> .gitignore
 ```
 
+Now we can begin installing the `npm` packages we'll need.
 ```
 npm install --save-dev typescript
 npm install --save-dev @types/node
