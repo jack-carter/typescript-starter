@@ -52,8 +52,7 @@ echo "build/" >> .gitignore
 ```
 
 Now create the source directories we specified in the `tsc` configuration above.
-```
-mkdir src
+```mkdir src
 touch src/index.ts
 ```
 
@@ -64,11 +63,16 @@ Create a `nodemon.json` file (like the one in this project).
 We'l be adding two commands to our `package.json` file in the `scripts` section.
 ```
 "build": "rimraf ./build && tsc",
-"start:dev": "nodemon"
+"start:dev": "nodemon",
+"start": "npm run build && node build/index.js"
 ```
 
 ## Run the System
-Now run the solution using the following, which uses the `npm` command we just added.
+Now you can the solution in `development` mode.
 ```
 npm run start:dev
+```
+Or in `production` mode.
+```
+npm run start
 ```
