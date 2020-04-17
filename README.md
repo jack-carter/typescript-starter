@@ -45,16 +45,6 @@ npm install --save-dev rimraf
 npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
 ```
 
-## Configure 'nodemon'
-Create a `nodemon.json` file (like the one in this project).
-
-## Add `npm` Commands
-We'l be adding two commands to our `package.json` file in the `scripts` section.
-```
-"build": "rimraf ./build && tsc",
-"start:dev": "nodemon"
-```
-
 ## Setup the Correct Directories
 Tell Git to ignore any and all files under the `build/` directory
 ```
@@ -65,6 +55,16 @@ Now create the source directories we specified in the `tsc` configuration above.
 ```
 mkdir src
 touch src/index.ts
+```
+
+## Configure 'nodemon'
+Create a `nodemon.json` file (like the one in this project).
+
+## Add `npm` Commands
+We'l be adding two commands to our `package.json` file in the `scripts` section.
+```
+"build": "rimraf ./build && tsc",
+"start:dev": "nodemon"
 ```
 
 ## Run the System
