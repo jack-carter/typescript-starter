@@ -45,6 +45,12 @@ npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModul
 ```
 
 ## Setup the Correct Directories
+Tell Git to ignore any and all files under the `build/` directory
+```
+echo "build/" >> .gitignore
+```
+
+Now create the source directories we specified in the `tsc` configuration above.
 ```
 mkdir src
 touch src/index.js
