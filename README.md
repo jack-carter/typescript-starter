@@ -25,7 +25,7 @@ npm init -y
 ```
 git init
 git remote add origin https://github.com/jack-carter/typescript-starter.git
-git commit -m "Initial commit"
+git commit -m "New project"
 git push -u origin master
 ```
 
