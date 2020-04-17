@@ -38,6 +38,7 @@ npm install --save-dev typescript
 npm install --save-dev @types/node
 npm install --save-dev ts-node
 npm install --save-dev nodemon
+npm install --save-dev rimraf
 ```
 ## Configure `tsc`
 ```
