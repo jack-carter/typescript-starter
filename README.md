@@ -68,7 +68,7 @@ We'l be adding two commands to our `package.json` file in the `scripts` section.
 ```
 
 ## Run the System
-For development we have created an `npm` command called `start:dev`, which you can run using the following.
+Now run the solution using the following, which uses the `npm` command we just added.
 ```
 npm run start:dev
 ```
