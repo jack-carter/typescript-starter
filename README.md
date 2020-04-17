@@ -13,11 +13,8 @@ This guide follows along with the online tutorial found at [How to Setup a Types
 ## Creating the Basic Project Shell
 ```
 mkdir typescript-starter
-mkdir typescript-starter/src
 cd typescript-starter
 touch README.md
-touch tsconfig.json
-touch src/index.js
 npm init -y
 ```
 
@@ -29,7 +26,7 @@ git commit -m "New project"
 git push -u origin master
 ```
 
-## npm Packages to Install
+## `npm` Packages to Install
 First we need to ensure that any installed `npm` modules don't make their way into the Git repository.
 ```
 echo "node_modules/" >> .gitignore
@@ -42,4 +39,13 @@ npm install --save-dev @types/node
 npm install --save-dev ts-node
 npm install --save-dev nodemon
 ```
+## Configure `tsc`
+```
+npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
+```
 
+## Setup the Correct Directories
+```
+mkdir src
+touch src/index.js
+```
