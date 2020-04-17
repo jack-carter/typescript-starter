@@ -24,7 +24,6 @@ npm init -y
 ## Configuring Git Properly
 ```
 git init
-touch .gitignore
 git remote add origin https://github.com/jack-carter/typescript-starter.git
 git commit -m "Initial commit"
 git push -u origin master
