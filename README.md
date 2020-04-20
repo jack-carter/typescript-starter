@@ -93,7 +93,7 @@ echo "dist" >> .eslintignore
 ```
 And finally add an `npm` command in the `scripts` block of `package.json`.
 ```
-"line": "eslint . --ext .ts"
+"lint": "eslint . --ext .ts"
 ```
 So that you can now easily run ESLint by using the following.
 ```
