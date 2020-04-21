@@ -4,11 +4,11 @@ This guide follows along with the online tutorial found at [How to Setup a Types
 
 ## Before you begin you'll need ...
 
-* Node Version Manager (nvm)
-* Node Package Manager (npm)
-* A Git local install
 * A GitHub account 
 * A GitHub repository you want to upload to
+* A `git` local install
+* Node Version Manager (`nvm`)
+* Node Package Manager (`npm`)
 
 ## Creating the Basic Project Shell
 ```
